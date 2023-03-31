@@ -10,6 +10,9 @@ import { BienvenidoComponent } from './bienvenido.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    BienvenidoComponent
   ]
 })
 export class BienvenidoModule { }

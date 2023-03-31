@@ -1,1 +1,13 @@
-<p>login works!</p>
+<section class="main">
+    <div class="input">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" [(ngModel)]="nombre">
+    </div>
+    <div class="input">
+        <label for="clave">Clave</label>
+        <input id="clave" type="password" [(ngModel)]="clave">
+    </div>
+    <div class="input">
+        <button (click)="iniciarSesion()">Iniciar Sesión</button>
+    </div>
+</section>
