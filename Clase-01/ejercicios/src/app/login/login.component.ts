@@ -12,6 +12,6 @@ export class LoginComponent {
 
   iniciarSesion() {
     const usuario = new Usuario(this.nombre, this.clave);
-    console.log(usuario);
+    alert(`nombre: ${usuario.nombre} clave: ${usuario.clave}`);
   }
 }
