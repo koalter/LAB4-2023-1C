@@ -14,6 +14,7 @@ const routes: Routes = [
         (m) => m.InputOutputModule
       ),
   },
+  { path: 'directivas', loadChildren: () => import('./directivas/directivas.module').then(m => m.DirectivasModule) },
 ];
 
 @NgModule({

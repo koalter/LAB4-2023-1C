@@ -6,3 +6,7 @@ Comandos de NPM
 
 `npm install -g @angular/cli`
 `npm -g ls`
+
+Modulos: Agrupación lógica de componentes
+
+ng g m clientes --route clientes --module app.module

@@ -1,0 +1,10 @@
+<h5>Ejemplo directivas</h5>
+<!-- ngFor -->
+<ul>
+    <div *ngFor="let producto of listadoProductos; index as i">
+        <p>Indice: {{ i }}</p>
+        Marca: {{ producto.marca }} - Stock: {{ producto.stock }} - Precio {{ producto.precio }}
+
+        <button (click)="comprar(producto)">Comprar</button>
+    </div>
+</ul>
