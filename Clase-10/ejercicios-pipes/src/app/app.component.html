@@ -1,0 +1,28 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>
+    <app-formulario (onSubmit)="recuperarDatos($event)"></app-formulario>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <ul>
+      <li><strong>UpperCasePipe:</strong> {{ datos?.upperCase | uppercase }}</li>
+      <li><strong>LowerCasePipe:</strong> {{ datos?.lowerCase | lowercase }}</li>
+      <li><strong>DatePipe:</strong> {{ datos?.date | date: 'full' }}</li>
+      <li><strong>CurrencyPipe:</strong> {{ datos?.currency | currency }}</li>
+      <li><strong>DecimalPipe:</strong> {{ datos?.decimal | number : '1.2-2' }}</li>
+      <li><strong>PercentPipe:</strong> {{ datos?.percent | percent }}</li>
+    </ul>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div>
+      <h2>Crear PIPES propias</h2>
+      <h3>Una que modifique la forma en la que se ve el tiempo transcurrido.</h3>
+      <p>{{ fecha | date }}</p>
+      <h3>texto largo</h3>
+      <h4>Una que al texto que supere 7 caracteres , lo complete con tres puntos(...)</h4>
+      <p>{{ texto | largo }}</p>
+      <h4>Una que al texto que supere los “n” caracteres pasados por parámetros , lo complete con tres puntos(...)</h4>
+      <p>{{ texto | largo: 50 }}</p>
+      <h3>Una que usted se proponga</h3>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
